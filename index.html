@@ -13,7 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body>
-		<div class="home">
+		<div class="home" id="home">
 			<nav class="navbar">
 				<div class="navbar__logo">Encoders</div>
 				<ul class="navbar__items">
@@ -26,17 +26,312 @@
 					<li class="navbar__item"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<main class="slogan">
-				<span class="slogan__text">
+			<main class="slogan-container">
+				<span class="slogan-container__text">
 					Hola! We are the new kid on the block<br />
 					and we build awesome websites and mobile apps.
 				</span>
 				<button class="button-primary">Work With Us!</button>
 			</main>
 		</div>
-		<div class="services">
-			<h1 class="services__header">Services We Provide</h1>
+
+		<!-- Services Section Starts -->
+		<section class="services-container" id="about">
+			<h1 class="header">Services We Provide</h1>
 			<span class="line"></span>
-		</div>
+			<p class="slogan">
+				We are a small team of designers and developers, who help brands with
+				big ideas.
+			</p>
+
+			<!--  Service List Section  -->
+			<div class="service">
+				<!-- First Service Starts -->
+				<div class="service__container">
+					<div class="service__img">
+						<img
+							src="./img/flag.png"
+							alt="Service 1 Image"
+							class="service__img-photo"
+						/>
+					</div>
+					<span class="service__title">Branding</span>
+					<p class="service__subtitle">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
+						officiis?
+					</p>
+				</div>
+				<!-- First Service Ends -->
+				<!-- Second Service Starts -->
+				<div class="service__container">
+					<div class="service__img">
+						<img
+							src="./img/pencil.png"
+							alt="Service 1 Image"
+							class="service__img-photo"
+						/>
+					</div>
+					<span class="service__title">Design</span>
+					<p class="service__subtitle">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
+						officiis?
+					</p>
+				</div>
+				<!-- Second Service Ends -->
+
+				<!-- Third Service Starts -->
+				<div class="service__container">
+					<div class="service__img">
+						<img
+							src="./img/gear.png"
+							alt="Service 1 Image"
+							class="service__img-photo"
+						/>
+					</div>
+					<span class="service__title">Development</span>
+					<p class="service__subtitle">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
+						officiis?
+					</p>
+				</div>
+				<!-- Third Service Ends -->
+
+				<!-- Fourth Service Starts -->
+				<div class="service__container">
+					<div class="service__img">
+						<img
+							src="./img/rocket.png"
+							alt="Service 1 Image"
+							class="service__img-photo"
+						/>
+					</div>
+					<span class="service__title">Rocket Science</span>
+					<p class="service__subtitle">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
+						officiis?
+					</p>
+				</div>
+				<!-- Fourth Service Ends -->
+			</div>
+			<!-- End of Service List  -->
+		</section>
+		<!--************************************************************************************* -->
+		<!--End of Services Section -->
+		<!--************************************************************************************* -->
+
+		<!-- Member Section Starts -->
+		<section class="team-members">
+			<h1 class="header">Meet Our Beautiful Team</h1>
+			<span class="line--black"></span>
+			<p class="slogan">
+				We are a small team of designers and developers, who help brands with
+				big ideas.
+			</p>
+			<!-- Members' list -->
+			<div class="members">
+				<!-- First Member Section -->
+				<div class="member">
+					<div class="member__photo">
+						<img src="img/team-1.png" class="member-photo" alt="" />
+					</div>
+					<div class="member__name">Richard Feynman</div>
+					<div class="member__designation">CEO/Developer</div>
+					<div class="member__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+						quos dolore dolores laboriosam nemo facilis, culpa similique aliquid
+						fugiat officiis.
+					</div>
+					<!-- Social Media Icons -->
+					<div class="social-icons">
+						<!-- Facebook -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</div>
+						<!-- Instagram -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</div>
+						<!--Linkedin -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</div>
+						<!-- Gmail -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-gmail"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- First Member Section Ends -->
+
+				<!-- First Member Section -->
+				<div class="member">
+					<div class="member__photo">
+						<img src="img/team-2.png" class="member-photo" alt="" />
+					</div>
+					<div class="member__name">Bill Nye</div>
+					<div class="member__designation">Backend Developer</div>
+					<div class="member__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+						quos dolore dolores laboriosam nemo facilis, culpa similique aliquid
+						fugiat officiis.
+					</div>
+					<!-- Social Media Icons -->
+					<div class="social-icons">
+						<!-- Facebook -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</div>
+						<!-- Instagram -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</div>
+						<!--Linkedin -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</div>
+						<!-- Gmail -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-gmail"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- First Member Section Ends -->
+
+				<!-- First Member Section -->
+				<div class="member">
+					<div class="member__photo">
+						<img src="img/team-3.png" class="member-photo" alt="" />
+					</div>
+					<div class="member__name">Bear Grylls</div>
+					<div class="member__designation">HR Manager</div>
+					<div class="member__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+						quos dolore dolores laboriosam nemo facilis, culpa similique aliquid
+						fugiat officiis.
+					</div>
+					<!-- Social Media Icons -->
+					<div class="social-icons">
+						<!-- Facebook -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</div>
+						<!-- Instagram -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</div>
+						<!--Linkedin -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</div>
+						<!-- Gmail -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-gmail"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- First Member Section Ends -->
+
+				<!-- First Member Section -->
+				<div class="member">
+					<div class="member__photo">
+						<img src="img/team-4.png" class="member-photo" alt="" />
+					</div>
+					<div class="member__name">Marcus Rashford</div>
+					<div class="member__designation">Sr. Developer</div>
+					<div class="member__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+						quos dolore dolores laboriosam nemo facilis, culpa similique aliquid
+						fugiat officiis.
+					</div>
+					<!-- Social Media Icons -->
+					<div class="social-icons">
+						<!-- Facebook -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</div>
+						<!-- Instagram -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</div>
+						<!--Linkedin -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</div>
+						<!-- Gmail -->
+						<div class="social">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="./img/sprite.svg#icon-gmail"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- First Member Section Ends -->
+			</div>
+		</section>
+		<a href="#home">
+			<span class="back-to-top">Back To Top &uarr;</span>
+		</a>
 	</body>
 </html>

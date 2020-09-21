@@ -1,0 +1,57 @@
+.team-members {
+	background-color: $color-third;
+	display: flex;
+	flex-direction: column;
+	padding: 8rem;
+	text-align: center;
+	color: $color-grey-dark-1;
+}
+
+.members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.member {
+	flex: 1 0 18%;
+	&:not(:last-child) {
+		margin-right: 2rem;
+	}
+	&__photo {
+		margin-top: 3rem;
+		.member-photo {
+			border-radius: 50%;
+			height: 15rem;
+			width: 15rem;
+		}
+	}
+	&__name {
+		font-size: $default-font-size-medium;
+		font-weight: 900;
+		letter-spacing: 1px;
+		margin-top: 0.7rem;
+	}
+	&__designation {
+		font-size: $button-font;
+		color: $color-fifth-light;
+		font-weight: 600;
+	}
+	&__description {
+		font-size: $default-font-size;
+		color: $color-grey-dark;
+		margin: 1.2rem 0;
+	}
+	.social-icons {
+		display: flex;
+		justify-content: space-around;
+		padding: 0 5rem;
+	}
+	.social__icon {
+		height: 2rem;
+		width: 2rem;
+		transition: transform 0.2s ease;
+		&:hover {
+			transform: translateY(-2px);
+		}
+	}
+}

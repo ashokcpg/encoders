@@ -1,11 +1,37 @@
-.services {
+.services-container {
+	& *::selection {
+		background: $color-second-dark;
+	}
+	display: flex;
+	flex-direction: column;
 	background-color: $color-second;
-	height: 80vh;
-	&__header {
-		position: relative;
-		text-align: center;
-		padding-top: 10rem;
-		font-size: $header-font;
-		text-transform: uppercase;
+	padding: 8rem;
+	// height: 80vh;
+	text-align: center;
+}
+.service {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	&__container {
+		flex: 1 0 25%;
+		&:not(:last-child) {
+			padding-right: 2rem;
+		}
+	}
+	&__img {
+		&-photo {
+			height: 8rem;
+			width: 8rem;
+			border-radius: 50%;
+			margin-bottom: 2rem;
+		}
+	}
+	&__title {
+		font-size: $default-font-size-medium;
+	}
+	&__subtitle {
+		font-size: $default-font-size;
 	}
 }

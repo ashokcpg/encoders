@@ -1,13 +1,47 @@
 .line {
+	padding: 0 2rem;
+	&::after {
+		height: 1px;
+		content: "";
+		background: linear-gradient($color-grey-light, $color-grey-light) no-repeat
+			center/200px 100%;
+		display: block;
+		position: relative;
+		// top: 2rem;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&--black {
+		&::after {
+			height: 1px;
+			content: "";
+			background: linear-gradient($color-grey-dark-1, $color-grey-dark-1)
+				no-repeat center/200px 100%;
+			display: block;
+			position: relative;
+			// top: 2rem;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 }
-.line::after {
-	content: "";
-	background: linear-gradient($color-grey-light, $color-grey-light) no-repeat
-		center/200px 100%;
-	height: 1px;
-	display: block;
+.back-to-top {
+	font-size: $default-font-size-medium;
+	color: $color-black;
+	cursor: pointer;
+	position: fixed;
+	right: 0;
+	bottom: 2rem;
+	background-color: rgba($color: $color-white, $alpha: 0.5);
+	padding: 0.7rem;
+}
+.header {
 	position: relative;
-	top: 2rem;
-	left: 50%;
-	transform: translateX(-50%);
+	font-size: $header-font;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+.slogan {
+	font-size: $default-font-size;
+	margin: 2rem;
 }
