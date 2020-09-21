@@ -1,0 +1,39 @@
+.navbar {
+	height: 7rem;
+	display: flex;
+	justify-content: space-between;
+
+	&__logo {
+		font-size: 4rem;
+		color: $color-grey-light;
+		font-family: "Grenze Gotisch", cursive;
+		font-weight: 900;
+		cursor: pointer;
+	}
+	&__items {
+		display: flex;
+		align-items: center;
+		align-self: stretch;
+		& li {
+			list-style: none;
+		}
+	}
+	&__item {
+		font-size: 2rem;
+		padding: 0 3rem;
+		transition: $tr-2s;
+		&--active {
+			background-color: $color-primary-dark;
+		}
+		&:hover {
+			color: $color-white;
+			transform: $ty-2px;
+		}
+
+		& a {
+			font-weight: 900;
+			color: currentColor;
+			text-decoration: none;
+		}
+	}
+}

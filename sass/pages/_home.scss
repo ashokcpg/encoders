@@ -1,0 +1,30 @@
+body {
+	height: 100vh;
+}
+.home {
+	background-color: $color-primary;
+	height: 80vh;
+	padding: 6rem;
+
+	@include respond(tab-port) {
+		//width < 900 ?
+		padding: 0;
+	}
+}
+.slogan {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 40vh;
+	text-align: center;
+	&__text {
+		font-size: $header-font;
+		font-weight: 900;
+		line-height: 4rem;
+		margin-bottom: 3rem;
+	}
+}

@@ -1,0 +1,11 @@
+.services {
+	background-color: $color-second;
+	height: 80vh;
+	&__header {
+		position: relative;
+		text-align: center;
+		padding-top: 10rem;
+		font-size: $header-font;
+		text-transform: uppercase;
+	}
+}

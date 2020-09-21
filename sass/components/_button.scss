@@ -1,0 +1,18 @@
+.button-primary {
+	background-color: $color-third-dark;
+	height: 5rem;
+	width: 25rem;
+	border-radius: 1px;
+	outline: none;
+	border: none;
+	color: $color-grey-light;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: $tr-2s;
+	&:hover {
+		background-color: transparent;
+		border: 2px solid $color-third-dark;
+		color: currentColor;
+		transform: $ty-2px;
+	}
+}
