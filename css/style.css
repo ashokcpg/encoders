@@ -204,6 +204,8 @@ body {
   padding: 8rem;
   text-align: center;
   color: #333; }
+  .team-members *::selection {
+    background: #e69c42; }
 
 .members {
   display: flex;

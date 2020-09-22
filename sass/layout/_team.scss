@@ -1,4 +1,7 @@
 .team-members {
+	& *::selection {
+		background: $color-third-dark;
+	}
 	background-color: $color-third;
 	display: flex;
 	flex-direction: column;
