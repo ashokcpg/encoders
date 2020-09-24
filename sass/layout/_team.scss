@@ -1,8 +1,15 @@
 .team-members {
 	& *::selection {
 		background: $color-third-dark;
+		color: $color-white;
 	}
-	background-color: $color-third;
+	// background-color: $color-third;
+	background: rgb(255, 236, 210);
+	background: linear-gradient(
+		45deg,
+		rgba(255, 236, 210, 1) 0%,
+		rgba(252, 182, 159, 1) 100%
+	);
 	display: flex;
 	flex-direction: column;
 	padding: 8rem;

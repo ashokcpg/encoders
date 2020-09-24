@@ -1,0 +1,79 @@
+.portfolio {
+	& *::selection {
+		background: $color-fourth-dark;
+		color: $color-white;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+
+	padding: 8rem;
+	background-color: $color-fourth;
+	color: $color-grey-dark-1;
+	&__project {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+		&-container {
+			flex: 1 0 25%;
+			height: 20rem;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			margin: 2rem;
+			border-radius: 1rem;
+			color: $color-white;
+			cursor: pointer;
+		}
+
+		&-img {
+			position: relative;
+			height: auto;
+			width: 100%;
+			object-fit: cover;
+			overflow: hidden;
+			opacity: 0.5;
+			filter: hue-rotate(30deg);
+			object-fit: cover;
+			transition: all 0.5s;
+			transform: scale(1.2);
+		}
+		&-container:hover &-img {
+			transform: scale(1.1);
+			border-radius: 2rem;
+			overflow: hidden;
+			// filter: opacity(10px);
+			opacity: 1;
+		}
+		&-container:hover &-title {
+			visibility: hidden;
+		}
+		&-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 2.5rem;
+			font-weight: 900;
+			letter-spacing: 2px;
+			color: $color-grey-dark-1;
+		}
+		& button {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			transform: translateY(-3rem);
+			visibility: hidden;
+			transform: scale(0);
+			transition: $tr-8s;
+		}
+		&-container:hover button {
+			transform: scale(1);
+			visibility: visible;
+		}
+	}
+}

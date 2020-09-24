@@ -90,8 +90,9 @@ body {
   font-size: 1.6rem;
   margin: 2rem; }
 
-.button-primary {
+.btn-primary {
   background-color: #e69c42;
+  margin: 1rem;
   height: 5rem;
   width: 25rem;
   border-radius: 1px;
@@ -101,11 +102,48 @@ body {
   font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.2s ease; }
-  .button-primary:hover {
+  .btn-primary:hover {
     background-color: transparent;
     border: 2px solid #e69c42;
-    color: currentColor;
+    color: #ffff;
     transform: translateY(-2px); }
+
+.btn-second {
+  margin-top: 5rem;
+  background-color: #13547a; }
+  .btn-second:hover {
+    border: 2px solid #13547a; }
+
+.btn-small {
+  padding: 0.7rem;
+  margin-bottom: 2rem;
+  height: 3.5rem;
+  width: 8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #0b98b1;
+  transition: all 0.2s ease;
+  text-transform: uppercase; }
+  .btn-small--active {
+    background-color: #ffff; }
+  .btn-small:hover {
+    transform: translateY(-2px);
+    background-color: transparent;
+    border: 1px solid #0b98b1; }
+
+.btn-see-more {
+  height: 5rem;
+  width: 14rem;
+  outline: none;
+  color: #ffff;
+  border: none;
+  background-color: #0b98b1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 99; }
+  .btn-see-more:hover {
+    border: 1px solid #ffff; }
 
 html {
   scroll-behavior: smooth; }
@@ -114,7 +152,8 @@ body {
   height: 100vh; }
 
 .home {
-  background-color: #791ae6;
+  background: #667eea;
+  background: linear-gradient(163deg, #667eea 0%, #764ba2 100%);
   height: 80vh;
   padding: 6rem; }
   @media (max-width: 56.25em) {
@@ -172,11 +211,12 @@ body {
 .services-container {
   display: flex;
   flex-direction: column;
-  background-color: #0eac8f;
+  background: #13547a;
+  background: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);
   padding: 8rem;
   text-align: center; }
   .services-container *::selection {
-    background: #046251; }
+    background: #13547a; }
 
 .service {
   display: flex;
@@ -198,14 +238,16 @@ body {
     font-size: 1.6rem; }
 
 .team-members {
-  background-color: #ffd6a1;
+  background: #ffecd2;
+  background: linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);
   display: flex;
   flex-direction: column;
   padding: 8rem;
   text-align: center;
   color: #333; }
   .team-members *::selection {
-    background: #e69c42; }
+    background: #e69c42;
+    color: #ffff; }
 
 .members {
   display: flex;
@@ -245,3 +287,70 @@ body {
     transition: transform 0.2s ease; }
     .member .social__icon:hover {
       transform: translateY(-2px); }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 8rem;
+  background-color: #b1f0fb;
+  color: #333; }
+  .portfolio *::selection {
+    background: #0b98b1;
+    color: #ffff; }
+  .portfolio__project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem; }
+    .portfolio__project-container {
+      flex: 1 0 25%;
+      height: 20rem;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      margin: 2rem;
+      border-radius: 1rem;
+      color: #ffff;
+      cursor: pointer; }
+    .portfolio__project-img {
+      position: relative;
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      opacity: 0.5;
+      filter: hue-rotate(30deg);
+      object-fit: cover;
+      transition: all 0.5s;
+      transform: scale(1.2); }
+    .portfolio__project-container:hover .portfolio__project-img {
+      transform: scale(1.1);
+      border-radius: 2rem;
+      overflow: hidden;
+      opacity: 1; }
+    .portfolio__project-container:hover .portfolio__project-title {
+      visibility: hidden; }
+    .portfolio__project-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #333; }
+    .portfolio__project button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      transform: translateY(-3rem);
+      visibility: hidden;
+      transform: scale(0);
+      transition: all 0.8s ease; }
+    .portfolio__project-container:hover button {
+      transform: scale(1);
+      visibility: visible; }
