@@ -24,6 +24,14 @@
 		border: 2px solid $color-second-dark;
 	}
 }
+.btn-third {
+	margin-top: 5rem;
+	background-color: $color-fourth-dark;
+	&:hover {
+		border: 2px solid $color-fourth-dark;
+		color: $color-fourth-dark;
+	}
+}
 .btn-small {
 	padding: 0.7rem;
 	margin-bottom: 2rem;

@@ -114,6 +114,13 @@ body {
   .btn-second:hover {
     border: 2px solid #13547a; }
 
+.btn-third {
+  margin-top: 5rem;
+  background-color: #0b98b1; }
+  .btn-third:hover {
+    border: 2px solid #0b98b1;
+    color: #0b98b1; }
+
 .btn-small {
   padding: 0.7rem;
   margin-bottom: 2rem;
@@ -339,7 +346,8 @@ body {
       font-size: 2.5rem;
       font-weight: 900;
       letter-spacing: 2px;
-      color: #333; }
+      color: #333;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
     .portfolio__project button {
       position: absolute;
       top: 0;
