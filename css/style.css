@@ -90,6 +90,9 @@ body {
   font-size: 1.6rem;
   margin: 2rem; }
 
+.hide-class {
+  display: none; }
+
 .btn-primary {
   background-color: #e69c42;
   margin: 1rem;
@@ -119,7 +122,7 @@ body {
   background-color: #0b98b1; }
   .btn-third:hover {
     border: 2px solid #0b98b1;
-    color: #0b98b1; }
+    color: #333; }
 
 .btn-small {
   padding: 0.7rem;
@@ -278,7 +281,7 @@ body {
     margin-top: 0.7rem; }
   .member__designation {
     font-size: 2rem;
-    color: #337cbd;
+    color: #ee57ee;
     font-weight: 600; }
   .member__description {
     font-size: 1.6rem;
@@ -362,3 +365,100 @@ body {
     .portfolio__project-container:hover button {
       transform: scale(1);
       visibility: visible; }
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 8rem;
+  background-color: #ee57ee;
+  color: #f7f7f7; }
+  .testimonial *::selection {
+    background: #aa0caa;
+    color: #ffff; }
+  .testimonial-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap; }
+  .testimonial .testi {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    flex: 0 0 50%; }
+    .testimonial .testi__img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      margin-right: 3rem;
+      align-self: center; }
+    .testimonial .testi-msg {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 50%;
+      text-align: left; }
+      .testimonial .testi-msg__text {
+        font-size: 1.6rem; }
+      .testimonial .testi-msg__name {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-top: 1rem; }
+      .testimonial .testi-msg__position {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #ffd6a1; }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 8rem;
+  background-color: #337cbd;
+  color: #f7f7f7; }
+  .footer-container *::selection {
+    background: #14466f;
+    color: #ffff; }
+
+.msg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem; }
+  .msg-name, .msg-email, .msg-area {
+    height: 5rem;
+    flex: 0 0 25%;
+    padding: 1rem 1.5rem;
+    background-color: #14466f;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #ffff;
+    border-radius: 5px; }
+  .msg-name::placeholder, .msg-email::placeholder, .msg-area::placeholder {
+    color: #ffff;
+    font-size: 1.6rem; }
+  .msg-email {
+    height: 5rem;
+    padding: 1rem;
+    flex: 0 0 25%; }
+  .msg-area {
+    margin-top: 3rem;
+    height: 15rem;
+    flex: 0 0 75%; }
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 4rem;
+  background-color: #1966a9; }
+  .social-links > a {
+    color: #ffff;
+    text-decoration: none;
+    transition: all 0.2s ease; }
+    .social-links > a:hover {
+      transform: translateY(-2px); }

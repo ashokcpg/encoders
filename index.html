@@ -22,8 +22,8 @@
 						<a href="#home">Home</a>
 					</li>
 					<li class="navbar__item"><a href="#about">About</a></li>
-					<li class="navbar__item"><a href="#work">Work</a></li>
-					<li class="navbar__item"><a href="#blog">Blog</a></li>
+					<li class="navbar__item"><a href="#team">Team</a></li>
+					<li class="navbar__item"><a href="#portfolio">Portfolio</a></li>
 					<li class="navbar__item"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -124,7 +124,7 @@
 		<!--************************************************************************************* -->
 
 		<!-- Member Section Starts -->
-		<section class="team-members">
+		<section class="team-members" id="team">
 			<h1 class="header">Meet Our Beautiful Team</h1>
 			<span class="line--black"></span>
 			<p class="slogan">
@@ -347,11 +347,11 @@
 				sapiente mollitia.
 			</p>
 			<div class="button-container">
-				<button class="btn-small btn-small--active">All</button>
-				<button class="btn-small">Web</button>
-				<button class="btn-small">Mobile</button>
-				<button class="btn-small">Desktop</button>
-				<button class="btn-small">IOT</button>
+				<button class="btn-small btn-small--active" data-id="all">All</button>
+				<button class="btn-small" data-id="web">Web</button>
+				<button class="btn-small" data-id="mobile">Mobile</button>
+				<button class="btn-small" data-id="desktop">Desktop</button>
+				<button class="btn-small" data-id="iot">IOT</button>
 			</div>
 			<div class="portfolio__project">
 				<!-- First Project -->
@@ -368,7 +368,7 @@
 				</div>
 				<!--End of First Project -->
 				<!--Start of Second Project -->
-				<div class="portfolio__project-container" data-id="desktop">
+				<div class="portfolio__project-container" data-id="iot">
 					<img
 						src="./img/project-2.png"
 						alt="Project 1 Picture"
@@ -486,8 +486,104 @@
 		</section>
 
 		<!-- Portfolio Section Ends -->
+		<!-- Testimonial Section Starts -->
+		<section class="testimonial" id="testimonial">
+			<h1 class="header">What people say about us</h1>
+			<span class="line"></span>
+			<p class="slogan">Our Clients Love us.</p>
+			<div class="testimonial-container">
+				<!-- first testimonial -->
+				<div class="testi">
+					<img src="./img/gear.png" class="testi__img" alt="" />
+					<div class="testi-msg">
+						<p class="testi-msg__text">
+							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+							tempora nisi consequatur a quae."
+						</p>
+						<span class="testi-msg__name">Random Name</span>
+						<span class="testi-msg__position"> CEO of XYZ </span>
+					</div>
+				</div>
+				<!-- end offirst testimonial -->
+				<!-- first testimonial -->
+				<div class="testi">
+					<img src="./img/gear.png" class="testi__img" alt="" />
+					<div class="testi-msg">
+						<p class="testi-msg__text">
+							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+							tempora nisi consequatur a quae."
+						</p>
+						<span class="testi-msg__name">Random Name</span>
+						<span class="testi-msg__position"> CEO of XYZ </span>
+					</div>
+				</div>
+				<!-- end offirst testimonial -->
+				<!-- first testimonial -->
+				<div class="testi">
+					<img src="./img/gear.png" class="testi__img" alt="" />
+					<div class="testi-msg">
+						<p class="testi-msg__text">
+							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+							tempora nisi consequatur a quae."
+						</p>
+						<span class="testi-msg__name">Random Name</span>
+						<span class="testi-msg__position"> CEO of XYZ </span>
+					</div>
+				</div>
+				<!-- end offirst testimonial -->
+				<!-- first testimonial -->
+				<div class="testi">
+					<img src="./img/gear.png" class="testi__img" alt="" />
+					<div class="testi-msg">
+						<p class="testi-msg__text">
+							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+							tempora nisi consequatur a quae."
+						</p>
+						<span class="testi-msg__name">Random Name</span>
+						<span class="testi-msg__position"> CEO of XYZ </span>
+					</div>
+				</div>
+				<!-- end offirst testimonial -->
+			</div>
+		</section>
+		<!-- Testimonial Section Ends -->
+
+		<!-- Footer -->
+		<footer class="footer-container" id="contact">
+			<h1 class="header">Get in touch</h1>
+			<span class="line"></span>
+			<p class="slogan">Bishal Bazzar, Chapagai Complex - Kathmandu,Nepal</p>
+			<div class="msg">
+				<input type="text" placeholder="Your Name" class="msg-name" required />
+				<input
+					type="email"
+					placeholder="Your Email*"
+					class="msg-email"
+					required
+				/>
+				<textarea
+					name="message"
+					class="msg-area"
+					id="message"
+					placeholder="Your Message"
+				></textarea>
+			</div>
+			<a href="#">
+				<button class="btn-primary btn-third">Work With Us</button>
+			</a>
+		</footer>
+		<div class="social-links">
+			<a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+			<a href="#">Github</a>
+			<a href="#">Linkedin</a>
+			<a href="#">Dribbble</a>
+		</div>
 		<a href="#home">
 			<span class="back-to-top">Back To Top &uarr;</span>
 		</a>
+
+		<!-- Javascript -->
+		<script src="./js/script.js"></script>
 	</body>
 </html>

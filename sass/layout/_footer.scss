@@ -1,0 +1,67 @@
+.footer-container {
+	& *::selection {
+		background: $color-sixth-dark;
+		color: $color-white;
+	}
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	padding: 8rem;
+	background-color: $color-sixth-light;
+	color: $color-grey-light;
+}
+.msg {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	&-name,
+	&-email,
+	&-area {
+		height: 5rem;
+		flex: 0 0 25%;
+		padding: 1rem 1.5rem;
+		background-color: $color-sixth-dark;
+		outline: none;
+		border: none;
+		font-size: $default-font-size;
+		color: $color-white;
+		border-radius: 5px;
+	}
+	&-name::placeholder,
+	&-email::placeholder,
+	&-area::placeholder {
+		color: $color-white;
+		font-size: $default-font-size;
+	}
+	&-email {
+		height: 5rem;
+		padding: 1rem;
+		flex: 0 0 25%;
+	}
+	&-area {
+		margin-top: 3rem;
+		height: 15rem;
+		flex: 0 0 75%;
+	}
+}
+.social-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	font-size: $default-font-size;
+	padding: 4rem;
+	background-color: $color-sixth-light-1;
+	& > a {
+		color: $color-white;
+		text-decoration: none;
+		transition: $tr-2s;
+		&:hover {
+			transform: $ty-2px;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+.testimonial {
+	& *::selection {
+		background: $color-fifth-dark;
+		color: $color-white;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+
+	padding: 8rem;
+	background-color: $color-fifth-light;
+	color: $color-grey-light;
+	&-container {
+		margin-top: 5rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.testi {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 4rem;
+		flex: 0 0 50%;
+		&__img {
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			margin-right: 3rem;
+			align-self: center;
+		}
+		&-msg {
+			display: flex;
+			flex-direction: column;
+			flex: 1 0 50%;
+			text-align: left;
+			&__text {
+				font-size: 1.6rem;
+			}
+			&__name {
+				font-size: $default-font-size-medium;
+				font-weight: 900;
+				margin-top: 1rem;
+			}
+			&__position {
+				font-size: $default-font-size;
+				font-weight: 700;
+				color: $color-third;
+			}
+		}
+	}
+}
