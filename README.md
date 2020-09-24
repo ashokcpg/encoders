@@ -2,7 +2,7 @@
 
 > [DEMO LINK](https://ashokcpg.gitlab.io/encoders/)
 
-##Usage
+## Usage
 
 ```bash
 git clone https://github.com/ashokcpg/encoders
