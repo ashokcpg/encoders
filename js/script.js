@@ -9,6 +9,7 @@ const hide_other_El = (arg) => {
 const show_El = (arg) => {
 	for (var i = 0, len = arg.length; i < len; i++) {
 		arg[i].style.display = "flex";
+		arg[i].classList.add = "btn-small--active";
 	}
 };
 

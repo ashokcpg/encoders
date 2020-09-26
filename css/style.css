@@ -298,7 +298,7 @@ body {
 .portfolio {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   text-align: center;
   padding: 8rem;
   background-color: #b1f0fb;
@@ -308,10 +308,12 @@ body {
     color: #ffff; }
   .portfolio__project {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    flex: 1 0 50%;
     margin-top: 2rem; }
     .portfolio__project-container {
-      flex: 0 0 25%;
+      flex: 1 0 25%;
       height: 20rem;
       overflow: hidden;
       position: relative;
