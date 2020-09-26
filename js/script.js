@@ -1,33 +1,34 @@
-let elements = document.querySelectorAll(".portfolio__project-container");
-const projects = document.querySelector(".portfolio");
-btns = document.querySelectorAll(".btn-small");
-console.log(btns);
-const btnClassName = "btn-small-active";
-const hideItems = "hide-class";
+let classes = ["web", "mobile", "iot", "desktop"];
 
-// const btns = document.querySelectorAll(".tab-btn");
+const hide_other_El = (arg) => {
+	for (var i = 0, len = arg.length; i < len; i++) {
+		arg[i].style.display = "none";
+	}
+};
 
-// const about = document.querySelector(".about");
+const show_El = (arg) => {
+	for (var i = 0, len = arg.length; i < len; i++) {
+		arg[i].style.display = "flex";
+	}
+};
 
-// const articles = document.querySelectorAll(".content");
+const __hide = (target) => {
+	classes.map((cl) => {
+		let hide_classes = document.getElementsByClassName(cl);
+		hide_other_El(hide_classes);
+	});
+	let show_classes = document.getElementsByClassName(target);
+	show_El(show_classes);
+};
 
-// projects.addEventListener("click", function (e) {
-// 	const id = e.target.dataset.id;
-// 	console.log(id);
-// 	if (id) {
-// 		//remove active from other buttons...
+const __show = () => {
+	classes.map((cl, i) => {
+		let show_classes = document.getElementsByClassName(cl);
+		show_El(show_classes);
+	});
+};
 
-// 		btns.forEach(function (btn) {
-// 			btn.classList.remove("active");
-// 			e.target.classList.add("active");
-// 		});
-
-// 		// hide other articles...
-// 		articles.forEach(function (article) {
-// 			article.classList.remove("active");
-// 		});
-
-// 		const element = document.getElementById(id);
-// 		element.classList.add("active");
-// 	}
-// });
+const showElements = (target) => {
+	const el = target || "all";
+	el != "all" ? __hide(target) : __show();
+};

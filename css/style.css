@@ -90,9 +90,6 @@ body {
   font-size: 1.6rem;
   margin: 2rem; }
 
-.hide-class {
-  display: none; }
-
 .btn-primary {
   background-color: #e69c42;
   margin: 1rem;
@@ -314,7 +311,7 @@ body {
     flex-wrap: wrap;
     margin-top: 2rem; }
     .portfolio__project-container {
-      flex: 1 0 25%;
+      flex: 0 0 25%;
       height: 20rem;
       overflow: hidden;
       position: relative;
@@ -365,6 +362,12 @@ body {
     .portfolio__project-container:hover button {
       transform: scale(1);
       visibility: visible; }
+
+.show {
+  display: flex; }
+
+.hide {
+  display: none; }
 
 .testimonial {
   display: flex;
