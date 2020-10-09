@@ -1,6 +1,6 @@
 # EncodersInc Landing Page
 
-> [DEMO LINK](https://ashokcpg.gitlab.io/encoders/)
+> [DEMO LINK](https://ashokcpg.github.io/encoders/)
 
 ## Usage
 
